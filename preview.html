@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماجد غازي | الشخصية الأدبية</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+        
+        :root {
+            --primary: #3b82f6;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* صورة */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin-top: 15px;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, var(--primary), #8b5cf6);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .title {
+            color: var(--muted);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .nav-item {
+            color: var(--muted);
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--card);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        iframe {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .profile-img { width: 90px; height: 90px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ماجد غازي</h1>
+    <p class="title">شخصية أدبية متميزة</p>
+
+    <!-- صورة -->
+    <img src="https://yt3.googleusercontent.com/ytc/AL5GRJX..." class="profile-img">
+
+    <div class="nav">
+        <a href="#about" class="nav-item">نبذة</a>
+        <a href="#works" class="nav-item">أعمالي</a>
+        <a href="#contact" class="nav-item">تواصل</a>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="card" id="about">
+        <h2>من أنا؟</h2>
+        <p>
+            كاتب وأديب سعودي، أعشق الكلمة وأسعى إلى تقديم محتوى أدبي يلامس القلب والعقل.
+        </p>
+    </div>
+
+    <div class="card" id="works">
+        <h2>أغنية فخر الأمم</h2>
+        <iframe height="315" src="https://www.youtube.com/embed/_GAPC8xCCg0"></iframe>
+    </div>
+
+    <div class="card" id="contact">
+        <h2>تواصل معي</h2>
+
+        <div class="social-links">
+            <a href="https://instagram.com/mjdgzy975" class="social-link">IG</a>
+            <a href="https://twitter.com/7tbt1" class="social-link">TW</a>
+            <a href="https://tiktok.com/@majidjanadi" class="social-link">TT</a>
+            <a href="https://youtube.com/@majidghazi-q6o" class="social-link">YT</a>
+            <a href="https://wa.me/966507113459" class="social-link">WA</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© جميع الحقوق محفوظة — أحمد اليافعي</p>
+</footer>
+
+</body>
+</html>
